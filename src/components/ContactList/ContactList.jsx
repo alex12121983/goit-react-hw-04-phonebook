@@ -13,22 +13,6 @@ const ContactList = ({contacts, removeContact}) => {
                     removeContact={removeContact}
                 />
             ))}
-            {/* { filter.length > 0 
-            ? visibleContacts.map((visibleContact) => (
-                <ContactItem 
-                    key={visibleContact.id}
-                    contact={visibleContact}
-                    removeContact={removeContact}
-                />
-            ))
-            : contacts.map((contact) => (
-                <ContactItem 
-                    key={contact.id}
-                    contact={contact}
-                    removeContact={removeContact}
-                />
-            ))
-            } */}
         </ul>
     )
 }

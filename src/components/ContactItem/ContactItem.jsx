@@ -28,4 +28,5 @@ ContactItem.propTypes = {
 		  		number: PropTypes.string.isRequired,
 		  		id: PropTypes.string.isRequired,
 		}).isRequired,
+    removeContact: PropTypes.func.isRequired,
 };

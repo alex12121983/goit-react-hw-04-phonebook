@@ -7,12 +7,15 @@ const Phonebook = ({onSubmit}) => {
     const [number, setNumber] = useState('')
 
     const handleChange = (evt) => {
-        if ( evt.target.name === 'name' ) {
-            setName( evt.target.value )
-        } else if ( evt.target.name === 'number' ) {
-            setNumber ( evt.target.value )
-        } else {
-            return
+        switch (evt.target.name) {
+            case 'name':
+                setName( evt.target.value )
+                break;
+            case 'number':
+                setNumber( evt.target.value )
+                break;
+            default:
+                break;
         }
     }
     const handleSubmit = (evt) => {
